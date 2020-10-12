@@ -1,8 +1,3 @@
---| ```
---| \a b -> f a (g b) c
---| =
---| f <~. g ~~$ c
---| ```
 module PointFree where
 
 import Control.Semigroupoid as S
