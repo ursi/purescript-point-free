@@ -1,4 +1,4 @@
-with import <nixos> {};
+with import (import ./nix/sources.nix).nixpkgs {};
 
 mkShell {
   buildInputs = [
