@@ -28,7 +28,7 @@ Using the convention we just introduced above, you might be able to guess what t
 ```
 f ~$ y = \x -> f x y
 ```
-`~$` is actually the familiar `flip` function in operator form! These operators exist up to `~~~~$`.
+`~$` is actually the familiar `flip` function in operator form! These operators exist up to 3 `~`s.
 
 # Composability
 
