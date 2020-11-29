@@ -8,5 +8,5 @@ mkShell {
     nodePackages.pulp
     purescript
     spago
-  ]
+  ];
 }
