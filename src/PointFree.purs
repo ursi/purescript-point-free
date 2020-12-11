@@ -119,7 +119,7 @@ applySecondFlipped x f y = f y x
 
 infixr 8 applySecondFlipped as ~#
 
---| `\f x y z = f y z x`
+--| `\f x y z -> f y z x`
 applyThird :: ∀ x y z a. (y -> z -> x -> a) -> x -> y -> z -> a
 applyThird f x y z = f y z x
 
@@ -130,7 +130,7 @@ applyThirdFlipped x f y z = f y z x
 
 infixr 8 applyThirdFlipped as ~~#
 
---| `\f w x y z = f x y z w`
+--| `\f w x y z -> f x y z w`
 applyFourth :: ∀ w x y z a. (x -> y -> z -> w -> a) -> w -> x -> y -> z -> a
 applyFourth f w x y z = f x y z w
 
