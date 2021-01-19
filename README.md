@@ -18,7 +18,7 @@ Operators of this type exist up to `<....`.
 
 Here we encounter a new convention. While the `.` has represented an argument that will be put through both functions, the `~` represents an argument that goes straight to the outer function.
 ```
-f <~. g = \x y -> f x (g y)`
+f <~. g = \x y -> f x (g y)
 ```
 All permutations of up to 4 `~`s and `.`s where the symbols don't mix, the `~`s are ahead of the `.`s, with at least one `.`  exist as operators.
 
