@@ -22,7 +22,7 @@ f <~. g = \x y -> f x (g y)
 ```
 All permutations of up to 4 `~`s and `.`s where the symbols don't mix, the `~`s are ahead of the `.`s, with at least one `.`  exist as operators.
 
-### `~$` and `~#`
+### `~$` and `#~`
 
 Using the convention we just introduced above, you might be able to guess what these operators do. They allow you to apply an argument to the second position in a function.
 ```

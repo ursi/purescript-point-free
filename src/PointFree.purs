@@ -117,7 +117,7 @@ infixl 8 applySecond as ~$
 applySecondFlipped :: ∀ x y a. x -> (y -> x -> a) -> y -> a
 applySecondFlipped x f y = f y x
 
-infixr 8 applySecondFlipped as ~#
+infixr 8 applySecondFlipped as #~
 
 --| `\f x y z -> f y z x`
 applyThird :: ∀ x y z a. (y -> z -> x -> a) -> x -> y -> z -> a
@@ -128,7 +128,7 @@ infixl 8 applyThird as ~~$
 applyThirdFlipped :: ∀ x y z a. x -> (y -> z -> x -> a) -> y -> z -> a
 applyThirdFlipped x f y z = f y z x
 
-infixr 8 applyThirdFlipped as ~~#
+infixr 8 applyThirdFlipped as #~~
 
 --| `\f w x y z -> f x y z w`
 applyFourth :: ∀ w x y z a. (x -> y -> z -> w -> a) -> w -> x -> y -> z -> a
@@ -139,4 +139,4 @@ infixl 8 applyFourth as ~~~$
 applyFourthFlipped :: ∀ w x y z a. w -> (x -> y -> z -> w -> a) -> x -> y -> z -> a
 applyFourthFlipped w f x y z = f x y z w
 
-infixr 8 applyFourthFlipped as ~~~#
+infixr 8 applyFourthFlipped as #~~~
