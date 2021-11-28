@@ -24,10 +24,12 @@ All permutations of up to 4 `~`s and `.`s where the symbols don't mix, the `~`s 
 
 ### `~$` and `#~`
 
-Using the convention we just introduced above, you might be able to guess what these operators do. They allow you to apply an argument to the second position in a function.
+These operators use a similar convention for `~` as the composition operators above. They allow you to apply an argument to the second position in a function. You can think of the `~` as an empty space waiting to be filled.
+
 ```
 f ~$ y = \x -> f x y
 ```
+
 `~$` is actually the familiar `flip` function in operator form! These operators exist up to 3 `~`s.
 
 ## Composability
